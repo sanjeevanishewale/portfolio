@@ -1,0 +1,378 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awsesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./css//style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <!-- extra -->
+    <div class="scroll_To_Top">
+        <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">Portfolio.</a></div>
+            <ul class="menu">
+                <li><a onclick="removeActive()" href="#home">Home</a></li>
+                <li><a onclick="removeActive()" href="#about">About</a></li>
+                <li><a onclick="removeActive()" href="#skills">Skills</a></li>
+                <li><a onclick="removeActive()" href="#projects">Projects</a></li>
+                <li><a onclick="removeActive()" href="#contact">contact</a></li>
+                <div class="cancel_btn" onclick="removeActive()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </ul>
+            <div class="media_icons">
+                <a href="" target="blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="" target="blank"><i class="fa-brands fa-github"></i></a>
+                <a href="" target="blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="menu_btn" onclick="addActive()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Home section -->
+
+    <div class="home" id="home">
+        <div class="left_component">
+            <div class="content">
+                <p>Hello</p>
+                <h1>I'm Sanjeevani Shewale</h1>
+                <h3>Full Stack Developer</h3>
+                <p>from India</p>
+                <!-- <button class="btn" type="button"><a
+                        href="https://drive.google.com/file/d/1vjiagbpFH2n2zxC68pEMgIBytJNSfDp_/view" target="blank">Download
+                        CV</a></button> -->
+                <button class="btn" type="button"><a href="#contact">Hire Me</a></button>
+            </div>
+        </div>
+        <div class="right_component">
+            <div class="img">
+                <img src="./img//passport.jpeg" alt="IMAGE DOESN'T LODE">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- about section -->
+    <div class="about" id="about">
+
+        <div class="about_heading">
+            <h1>About Me</h1>
+        </div>
+        <div class="component">
+            <div class="left_component">
+                <img src="./img/photo.jpg" alt="full_img">
+            </div>
+            <div class="right_component">
+                <p> Hey, I am Sanjeevani Shewale, currently studying in TE computer engineering course at Sandip Institute
+                    of Technology and Research Center Nashik. I have a skills in HTML, CSS, Javascript, ReactJS,
+                    NodeJS, Express JS, MongoDB, Rest API , CPP , Java and DSA. I have completed my HSC from KTHM College Nashik
+                    and I got 52.60% Also I have completed my SSC from Adarsh madhyamik vidhyalaya Nashik and I got 87.20 %.
+                    <br> <br>
+                    I am passionate about my work because I love what I do, I have a steady source of motivation that
+                    drives me to do my best.
+                    <br> <br>
+                    I am seeking opportunities to join a company that can help me in enhancing my skills, strengthening
+                    my
+                    knowledge, and realizing my potential at the same time, I want to contribute to growing the
+                    organization. I am willing to explore a wide variety of opportunities that can help me gain
+                    perspective.
+
+                </p>
+                <button type="button" class="btn">
+                    <a href="https://drive.google.com/file/d/1vjiagbpFH2n2zxC68pEMgIBytJNSfDp_/view" target="blank">Download CV</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- skills section -->
+    <div class="skills" id="skills">
+        <div class="skills_heading">
+            <h1>Skills</h1>
+        </div>
+        <div class="component">
+            <div class="left_Component">
+
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line html"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line CSS"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="line JavaScript"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>ReactJS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line ReactJS"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>NodeJS</span>
+                        <span>83%</span>
+                    </div>
+                    <div class="line NodeJS"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>ExpressJS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line ExpressJS"></div>
+                </div>
+            </div>
+
+            <div class="right_Component">
+
+                <div class="bars">
+                    <div class="info">
+                        <span>MongoDB</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line MongoDB"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>mySQL</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line mySQL"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>Rest API's</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line Rest"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>CPP</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line CPP"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>Java</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="line Java"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>DSA</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line DSA"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- projects section -->
+    <div class="projects" id="projects">
+
+        <div class="projects_heading">
+            <h1>Projects</h1>
+        </div>
+        <div class="component">
+            <div class="card">
+                <div class="project_Img">
+                    <a href="https://github.com/prathameshmate/Whats-App-Clone.git" target="blank"><img
+                            src="./img/whatsapp.jpg" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">WhatsApp Clone</h3>
+                    <p class="Porject_Details"> Whats-App-Clone By Using ReactJS , NodeJS , ExpressJS , MongoDB and
+                        Socket.io . </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="project_Img">
+                    <a href="https://prathamesh-mate-portfolio.herokuapp.com" target="blank"><img
+                            src="./img/portfolio.jpg" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">Portfolio Website</h3>
+                    <p class="Porject_Details"> Portfolio Website By Using HTML , CSS and JavaScript ( Frontend Project
+                        ).</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="project_Img">
+                    <a href="https://live-weather-react-app.herokuapp.com" target="blank"><img
+                            src="./img/Whether App By Using ReactJS 1.jpg" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">Weather App Using ReactJS</h3>
+                    <p class="Porject_Details"> Weather App By Using ReactJS (JavaScript Framework).</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="project_Img">
+                    <a href="https://to-do-app-reactjs.herokuapp.com" target="blank"><img
+                            src="./img/To-Do App By Using ReactJS 1.jpg" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">To-Do App Using ReactJS</h3>
+                    <p class="Porject_Details"> To-Do App By Using ReactJS (JavaScript Framework).</p>
+                </div>
+            </div>
+            <!-- <div class="card">
+                <div class="project_Img">
+                    <a href="https://bussiness-website-reactjs.herokuapp.com" target="blank"><img
+                            src="./img/bussiness website.png" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">Bussiness Website Using ReactJS</h3>
+                    <p class="Porject_Details"> Bussiness Website by Using ReactJS (JavaScript Framework).</p>
+                </div>
+            </div> -->
+            <!-- <div class="card">
+                <div class="project_Img">
+                    <a href="https://github.com/prathameshmate/Mern-Project-1.git" target="blank"><img
+                            src="./img/Mern_project.png" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">MERN Project</h3>
+                    <p class="Porject_Details"> MERN Stack Project By Using ReactJS , NodeJS , ExpressJS and MongoDb.
+                    </p>
+                </div>
+            </div> -->
+            <div class="card">
+                <div class="project_Img">
+                    <a href="https://github.com/prathameshmate/React-Notes-App-Project.git" target="blank"><img
+                            src="./img/Notes App By Using ReactJS 1.jpg" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">Notes App Using ReactJS</h3>
+                    <p class="Porject_Details"> Notes App By Using ReactJS (JavaScript Framework)</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="project_Img">
+                    <a href="https://ipaddresstrackers.netlify.app" target="blank"><img src="./img/IP_Address_tracker.png" alt="project_Img"></a>
+                </div>
+                <div class="project_Info">
+                    <h3 class="project_Name">IP Address Tracker</h3>
+                    <p class="Porject_Details"> IP Address Tracker By using ReactJS , API KEY , Ipify API.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- contact section -->
+
+    <div class="contact" id="contact">
+        <div class="contact_Heading">
+            <h1>Contact Me</h1>
+            <h4>----- get in Touch -----</h4>
+        </div>
+        <div class="component">
+            <div class="left_component">
+                <h2>Get in Touch</h2>
+                <p>I am seeking opportunities to join a company that can help me in enhancing my skills, strengthening
+                    my knowledge, and realizing my potential at the same time, I want to contribute to growing the
+                    organization. I am willing to explore a wide variety of opportunities that can help me gain
+                    perspective.</p>
+                <div>
+                    <div class="person_Info">
+                        <div class="icon"><i class="fa-solid fa-user-large"></i></div>
+                        <div class="info">
+                            <h4>Name</h4>
+                            <p>Sanjeevani Rajendra Shewale</p>
+                        </div>
+                    </div>
+                    <div class="person_Info">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info">
+                            <h4>Address</h4>
+                            <p> Nashik-03 Maharashtra India</p>
+                        </div>
+                    </div>
+                    <div class="person_Info">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info">
+                            <h4>Email</h4>
+                            <p>sanjeevanishewale777@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right_component">
+                <div>
+                    <input type="text" class="inp" placeholder="Enter Your Name" onchange="read()">
+                    <input type="number" class="inp" placeholder="Enter Your mobile Number" onchange="read()">
+                </div>
+                <input type="text" class="inp" placeholder="Enter Your subject" onchange="read()">
+                <textarea class="inp" cols="30" rows="5" placeholder="Enter Your Message" onchange="read()"></textarea>
+                <button type="button" class="btn" onclick="sendMail()">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div>
+            <h5>Created By Sanjeevani Shewale | <i class="fa-regular fa-copyright"></i> 2022 All Rights Reserved</h5>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
